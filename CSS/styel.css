@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    font-family: arial;
+    text-align: center;
+    background: linear-gradient(to right, #16bffd, #cb3066); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    display: block;
+    transition: 250ms;
+
+}
+
+nav ul li:hover a{
+    background-color: #cb3066;
+
+}
+
+nav ul li::before{
+    content: ;
+    width: 50%;
+    height: 0%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: 550ms;
+
+    }
+
+    nav ul li::after{
+        content: ;
+        width: 50%;
+        height: 0%;
+        background-color: red;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        transition: 550ms;
+    }
+    
+    
+    nav ul li:hover::before{
+        width: 50%;
+    }
+
+    nav ul li:hover::after{
+
+        width: 50%;
+    }
+       
+
